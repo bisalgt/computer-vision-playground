@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  object_detector:
+    container_name: object_detector
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - 8000:8000
