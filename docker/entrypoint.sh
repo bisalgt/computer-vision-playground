@@ -1,5 +1,5 @@
 #!/bin/sh
 echo "--start the fastapi-server--"
 cd ./project
-python fastapi_streamer.py
+python -m streamer_app.main
 exec "$@"

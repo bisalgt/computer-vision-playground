@@ -15,7 +15,7 @@ COPY ./docker/entrypoint.sh /app/entrypoint.sh
 RUN sed -i 's/\r$//g' /app/entrypoint.sh
 RUN chmod +x /app/entrypoint.sh
 
-COPY ./project /app/project
+COPY ./streamer_app /app/streamer_app
 
 RUN apt update && \
 apt install -y libgl1-mesa-glx
